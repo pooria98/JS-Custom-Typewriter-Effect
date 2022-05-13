@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 4em;
+    color: white;
+}
+
+#changingText {
+    position: relative;
+    color: gold;
+}
+
+#changingText::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 1px;
+    height: 100%;
+    background-color: lightgray;
+    animation: blink 0.5s linear infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 1;
+    }
+    51% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
