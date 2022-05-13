@@ -14,6 +14,8 @@ function shuffle(array) {
     }
 }
 
+shuffle(listOfTexts);
+
 let i = 0;
 let j = 0;
 
